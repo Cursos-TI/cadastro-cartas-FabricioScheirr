@@ -1,54 +1,85 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+int main(){
+    char estado1, estado2, codigo1[4], codigo2[4], cidade1[50], cidade2[50];
+    int populacao1, populacao2, pontosTuristicos1, pontosTuristicos2;
+    float area1, area2, pib1, pib2;
+    float densidade1, densidade2, pibPerCapita1, pibPerCapita2;
 
-int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
-    //Dados da Carta 1 - Rio Grande do Sul
-    char estado1 = 'A';
-    char codigo1[4] = "A01";
-    char cidade1[50] = "Porto Alegre";
-    int populacao1 = 1332845;
-    float area1 = 495.39;
-    float pib1 = 81.56;
-    int pontosTuristicos1 = 20;
+    printf("=== CARTA 1 ===\n");
+    printf("Estado: Rio Grande do Sul\n");
+    printf("Letra do estado: "); scanf(" %c", &estado1);
+    printf("Codigo: "); scanf("%3s", codigo1);
+    printf("Cidade: "); scanf(" %[^\n]", cidade1);
+    printf("Populacao: "); scanf("%d", &populacao1);
+    printf("Area: "); scanf("%f", &area1);
+    printf("PIB: "); scanf("%f", &pib1);
+    printf("Pontos Turisticos: "); scanf("%d", &pontosTuristicos1);
 
-    // Dados da Carta 2  - Santa Catarina 
-    char estado2 = 'B'; 
-    char codigo2[4] = "B01";
-    char cidade2[50] = "Florianopolis";
-    int populacao2 = 537211;
-    float area2 = 675.41;
-    float pib2 = 39.70;
-    int pontosTuristicos2 = 15;
+    // Calculando densidade populacional e PIB per capita para a carta 1
+    densidade1 = populacao1 / area1;
+    pibPerCapita1 = pib1 / populacao1;
 
-  // Área para entrada de dados
-    //carta 1 
-    printf("====================================\n");
-      printf("                 CARTA1\n");
+    printf("\n=== CARTA 2 ===\n");
+    printf("Estado: Santa Catarina\n");
+    printf("Letra do estado: "); scanf(" %c", &estado2);
+    printf("Codigo: "); scanf("%3s", codigo2);
+    printf("Cidade: "); scanf(" %[^\n]", cidade2);
+    printf("Populacao: "); scanf("%d", &populacao2);
+    printf("Area: "); scanf("%f", &area2);
+    printf("PIB: "); scanf("%f", &pib2);
+    printf("Pontos Turisticos: "); scanf("%d", &pontosTuristicos2); 
 
-    printf("====================================\n");
-      printf("Estado: Rio Grande do Sul\n");
-      printf("Codigo: %s\n", codigo1);
-      printf("Nome da Cidade: %s\n", cidade1);
-      printf("Populacao: %d habitantates\n", populacao1);
-      printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
+     // Calculando densidade populacional e PIB per capita para a carta 2
+    densidade2 = populacao2 / area2;
+    pibPerCapita2 = pib2 / populacao2;
 
-      //Carta 2 
-    printf("====================================\n");
-      printf("                 CARTA2\n");
+    printf("\n==== CARTA 1 ====\n");
+    printf("Codigo: %s\n", codigo1);
+    printf("Cidade: %s\n", cidade1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhoes\n", pib1);
+    printf("Pontos Turisticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", densidade1);
+    printf("PIB per Capita: %.2f\n", pibPerCapita1);
+
+    printf("\n==== CARTA 2 ====\n");
+    printf("Codigo: %s\n", codigo2);
+    printf("Cidade: %s\n", cidade2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhoes\n", pib2);
+    printf("Pontos Turisticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", densidade2);
+    printf("PIB per Capita: %.2f\n", pibPerCapita2);  
+
     
-    printf("====================================\n");
-      printf("Estado: Santa Catarina\n");
-      printf("Codigo: %s\n", codigo2);
-      printf("Nome da Cidade: %s\n", cidade2);
-      printf("Populacao: %d habitantates\n", populacao2);
-      printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
+   
 
 
-  // Área para exibição dos dados da cidade
 
-return 0;
-} 
+
+
+
+
+
+
+
+
+
+
+    return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+}
