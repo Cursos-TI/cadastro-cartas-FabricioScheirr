@@ -54,9 +54,76 @@ int main(){
     printf("Densidade Populacional: %.2f habitantes/km²\n", densidade2);
     printf("PIB per Capita: %.2f\n", pibPerCapita2);  
 
-    
-   
+    // =========================================
+    //COMPARAÇÃO - POPULAÇÃO
+    // =========================================
 
+    printf("\n=========================================\n");
+    printf("COMPARAÇÃO - POPULACAO\n");
+    printf("\n========================================\n");
+
+    if (populacao1 > populacao2) {
+        printf("Carta 1 (%s) venceu!\n", cidade1);
+    } else{
+        printf("Carta 2 (%s) venceu!\n", cidade1);
+    }
+
+    // =========================================
+    //COMPARAÇÃO - ÁREA
+    // =========================================
+
+    printf("\n=========================================\n");
+    printf("COMPARAÇÃO - AREA\n");
+    printf("\n========================================\n");
+   
+    if (area1 > area2) {
+        printf("Carta 1 (%s) venceu!\n", cidade1);
+    } else{
+        printf("Carta 2 (%s) venceu!\n", cidade1);
+    }
+
+
+    // =========================================
+    //COMPARAÇÃO - PIB
+    // =========================================
+
+    printf("\n==================================\n");
+    printf("COMPRACAO - PIB\n");
+    printf("\n=================================\n");
+
+    if (pib1 > pib2) {
+        printf("Carta 1 (%s) venceu!\n");
+    } else {
+        printf("Carta 2 (%s) venceu!\n");
+    }
+
+     // =========================================
+    //COMPARAÇÃO - DENSIDADE POPULACIONAL
+    // =========================================
+    // Na densidade, o MENOR valor vence. 
+    printf("\n==================================\n");
+    printf("COMPRACAO - DENSIDADE POPULACIONAL\n");
+    printf("\n=================================\n");
+
+    if (densidade1 < densidade2) {
+        printf("Carta 1 (%s) venceu!\n, cidade1");
+    } else {
+        printf("Carta 2 (%s) venceu!\n, cidade1");
+    }
+
+    // =========================================
+    //COMPARAÇÃO - PIB PER CAPITA
+    // =========================================
+
+    printf("\n=================================\n");
+    printf("COMPARACAO - PIB PER CAPITA\n");
+    printf("\n================================\n");
+
+    if (pibPerCapita1 > pibPerCapita2) {
+        printf("Carta 1 (%s) venceu!\n", cidade1);
+    } else {
+        ("Carta 2 (%s) venceu!\n", cidade1);
+    }
 
 
 
